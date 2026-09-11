@@ -1,0 +1,11 @@
+# Python runtime files
+__pycache__/
+*.py[cod]
+
+# Operating-system files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Local editor settings
+.vscode/

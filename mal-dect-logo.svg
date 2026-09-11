@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">MAL-DECT logo</title>
+  <desc id="desc">A cyan security shield with an M letter and network nodes</desc>
+  <defs>
+    <linearGradient id="shield" x1="90" y1="50" x2="420" y2="470" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#35F2FF"/>
+      <stop offset=".48" stop-color="#13CBE5"/>
+      <stop offset="1" stop-color="#2AE39B"/>
+    </linearGradient>
+    <linearGradient id="inner" x1="125" y1="110" x2="390" y2="410" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#123F49"/>
+      <stop offset="1" stop-color="#0A2022"/>
+    </linearGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="9" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <path d="M256 34 437 105v128c0 120-73 207-181 245C148 440 75 353 75 233V105L256 34Z" fill="#0B2425" stroke="url(#shield)" stroke-width="18"/>
+  <path d="M256 74 400 130v103c0 96-56 166-144 202-88-36-144-106-144-202V130l144-56Z" fill="url(#inner)"/>
+  <g stroke="#35E9EF" stroke-width="7" stroke-linecap="round" opacity=".9">
+    <path d="m151 184 48 44 40-31 51 42 70-67"/>
+    <path d="m167 346 49-45 46 29 48-38 38 32" opacity=".55"/>
+  </g>
+  <g fill="#6BFFF0" filter="url(#glow)">
+    <circle cx="151" cy="184" r="10"/><circle cx="199" cy="228" r="8"/><circle cx="239" cy="197" r="8"/><circle cx="290" cy="239" r="9"/><circle cx="360" cy="172" r="10"/>
+    <circle cx="167" cy="346" r="8"/><circle cx="216" cy="301" r="7"/><circle cx="262" cy="330" r="7"/><circle cx="310" cy="292" r="8"/><circle cx="348" cy="324" r="8"/>
+  </g>
+  <path d="M172 329V230l39 49 45-65 45 65 39-49v99h-31v-37l-53-73-53 73v37h-31Z" fill="url(#shield)" filter="url(#glow)"/>
+</svg>

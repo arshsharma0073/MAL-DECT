@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" fill="none">
+  <defs>
+    <radialGradient id="body" cx="31%" cy="24%" r="75%"><stop stop-color="#FF9A9E"/><stop offset=".28" stop-color="#E74857"/><stop offset=".7" stop-color="#8B1E31"/><stop offset="1" stop-color="#330E18"/></radialGradient>
+    <radialGradient id="body2" cx="31%" cy="24%" r="75%"><stop stop-color="#FFB0A5"/><stop offset=".3" stop-color="#F05D4C"/><stop offset=".72" stop-color="#922737"/><stop offset="1" stop-color="#32101A"/></radialGradient>
+    <linearGradient id="spike" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FFB2A8"/><stop offset=".55" stop-color="#D23C4F"/><stop offset="1" stop-color="#581728"/></linearGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="15"/></filter><filter id="glow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <g id="spikes" stroke="url(#spike)" stroke-width="15" stroke-linecap="round"><path d="M0-145V-195"/><circle cy="-207" r="17" fill="#E94C59" stroke="#FFB2A8" stroke-width="6"/></g>
+    <g id="dots" fill="#FF8790" opacity=".62"><circle cx="-42" cy="-23" r="9"/><circle cx="18" cy="-52" r="7"/><circle cx="51" cy="26" r="11"/><circle cx="-20" cy="54" r="8"/><circle cx="66" cy="-14" r="6"/><circle cx="-72" cy="21" r="6"/></g>
+  </defs>
+  <g opacity=".2" filter="url(#blur)"><ellipse cx="900" cy="270" rx="250" ry="220" fill="#FF273D"/><ellipse cx="236" cy="645" rx="150" ry="135" fill="#EC3045"/></g>
+  <g transform="translate(900 270) rotate(-18)">
+    <g opacity=".9"><use href="#spikes" transform="rotate(0)"/><use href="#spikes" transform="rotate(32)"/><use href="#spikes" transform="rotate(64)"/><use href="#spikes" transform="rotate(96)"/><use href="#spikes" transform="rotate(128)"/><use href="#spikes" transform="rotate(160)"/><use href="#spikes" transform="rotate(192)"/><use href="#spikes" transform="rotate(224)"/><use href="#spikes" transform="rotate(256)"/><use href="#spikes" transform="rotate(288)"/><use href="#spikes" transform="rotate(320)"/></g>
+    <circle r="147" fill="url(#body)" stroke="#FF8992" stroke-width="3" filter="url(#glow)"/><circle r="121" stroke="#FF7B86" stroke-opacity=".34" stroke-width="5"/><use href="#dots"/><ellipse cx="-43" cy="-60" rx="54" ry="28" fill="#FFD3D0" opacity=".23"/>
+  </g>
+  <g transform="translate(226 650) rotate(24) scale(.66)" opacity=".86">
+    <g><use href="#spikes" transform="rotate(0)"/><use href="#spikes" transform="rotate(45)"/><use href="#spikes" transform="rotate(90)"/><use href="#spikes" transform="rotate(135)"/><use href="#spikes" transform="rotate(180)"/><use href="#spikes" transform="rotate(225)"/><use href="#spikes" transform="rotate(270)"/><use href="#spikes" transform="rotate(315)"/></g>
+    <circle r="147" fill="url(#body2)" stroke="#FF9B92" stroke-width="3"/><use href="#dots"/><ellipse cx="-43" cy="-60" rx="54" ry="28" fill="#FFE0D0" opacity=".22"/>
+  </g>
+  <g transform="translate(1075 610) rotate(-12) scale(.34)" opacity=".62"><g><use href="#spikes" transform="rotate(0)"/><use href="#spikes" transform="rotate(60)"/><use href="#spikes" transform="rotate(120)"/><use href="#spikes" transform="rotate(180)"/><use href="#spikes" transform="rotate(240)"/><use href="#spikes" transform="rotate(300)"/></g><circle r="147" fill="url(#body)"/><use href="#dots"/></g>
+</svg>
